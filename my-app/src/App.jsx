@@ -8,6 +8,8 @@ import Dashboard from "./pages/Dashboard";
 import Layout from "./components/Layout";
 import AddProduct from "./pages/AddProduct";
 import Profile from "./pages/Profile";
+import ProductDetail from "./pages/ProductDetail";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       {/* Protected/Dashboard routes wrapped with Layout */}
       <Route element={<Layout />}>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/dashboard/add" element={<AddProduct />} />
         <Route path="/profile" element={<Profile />} />
       </Route>
