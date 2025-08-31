@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import BlogList from './components/BlogList';
-import BlogPost from './components/BlogPost';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
